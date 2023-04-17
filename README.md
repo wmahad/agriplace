@@ -58,13 +58,16 @@ Clicking on a product should show the product in the product view.
 
 #### Product view
 
-The product view should have its own route, and should snow the name, description and tags of the product, along with a
-button that adds that product to the users cart.
+The product view should have its own route, and should snow a preview of the product in the "selected product" section.
+It should show the name, description and tags of the product, along with a button that adds that product to the users
+cart. When a product is added, the button should be replaced with a component that shows the number of times this
+product was added to the cart, two buttons to increase/reduce the amount and one button to completely remove the product
+from the cart.
 
 #### Cart
 
-The cart should be just a list of the products that the user has added to the cart, along with a button that removes
-that product from the cart. The cart contents should be saved in a redux state.
+The cart should be just a list of the products that the user has added to the cart, along with a controls to change the
+amount and remove that product from the cart. The cart contents should be saved in a redux state.
 
 #### Recently viewed
 
