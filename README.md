@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Agriplace - Frontend Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+This assignment is supposed to be a conversational piece, so don't push it too far, and it doesn't have to do perfect.
+Try not to spend more than four hours on it. We would like to focus on the code and not the style, so keep it simple
+and minimal, even using standard html elements would be fine. If you feel more comfortable using a UI library, feel free
+to do so.
+We use MUI in our project, but don't feel obliged to use it if you are not familiar with it, we'd rather that you spend
+your time thinking and coding than reading documentation.
 
-In the project directory, you can run:
+## The assignment
 
-### `npm start`
+The assignment is to create a simple web application that has an admin panel and a public facing page. The admin panel
+consists of two pages
+that are a basic CRUD, one for managing fruits and one for managing vegetables. The public facing page is a simple page
+that lists all the fruits and vegetables.
+There is already a mockup of a backend as RTK Query endpoints, you can find it in the `mocks` folder, the endpoints
+have a fake delay so please also use loading states where necessary. The mockup backend just saves the changes on
+localstorage,
+and there is also a function to reset the data to the initial state. There is also already a router and the basic layout
+of
+the app.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Admin panel
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The admin panel should have two pages, one for managing fruits and one for managing vegetables. The pages should have a
+list/table of the relevant products, and you should be able to create, update and delete them - if you don't use a
+UI framework, don't bother creating a modal if you think it would take too much of your time. There should also be a
+search field that filters the list of products by looking in the title, description and tags.
 
-### `npm test`
+#### Creating and Editing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+When creating a product, there should be a form with the following fields:
 
-### `npm run build`
+- Title
+- Description
+- Tags - as checkboxes ( fruits should show the fruit tags and vegetables should show the vegetable tags )
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+When editing a product, the form should be pre-filled with the current values of the product, it should have the same
+fields as creating, including an "archived" checkbox which would hide the product from the public page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Public facing page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The public facing page consists of four sections:
 
-### `npm run eject`
+- A list of all the fruits and vegetables
+- A section to view the selected products
+- A section that shows the cart's contents
+- A section that shows the last 5 products that the user has viewed
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### List of products
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The list should include all the non-archived fruits and vegetables along with a search field that filters the
+products based on name, a list of tags that you can toggle to filter the results. The list should show the
+name of the product and the tags as chips with their respective colors (just choose a color for each tag).
+Clicking on a product should show the product in the product view.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Product view
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The product view should have its own route, and should snow the name, description and tags of the product, along with a
+button that adds that product to the users cart.
 
-## Learn More
+#### Cart
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The cart should be just a list of the products that the user has added to the cart, along with a button that removes
+that product from the cart. The cart contents should be saved in a redux state.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Recently viewed
 
-### Code Splitting
+The recently viewed section should show a list of the last 5 products that the user has viewed, clicking on a product in
+the list should bring that product in the product view. The recently viewed products should be saved in a redux state.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
