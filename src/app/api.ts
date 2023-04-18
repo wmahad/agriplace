@@ -57,5 +57,7 @@ export const {
     useUpdateFruitMutation,
     useGetVegetablesQuery,
     useAddVegetableMutation,
-    useUpdateVegetableMutation
+    useUpdateVegetableMutation,
+    useGetFruitTagsQuery,
+    useGetVegetableTagsQuery,
 } = api

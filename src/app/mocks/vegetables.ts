@@ -1,8 +1,7 @@
-import {Fruit} from "types/Fruit";
 import {CRUD} from "./CRUD";
 import {Vegetable} from "../../types/Vegetable";
 // list of 20 fruits
-export const vegetables: Fruit[] = [{
+export const vegetables: Vegetable[] = [{
     id: "a16e1a2f-7207-4f8e-bdfd-9e81910b064f",
     name: "Broccoli",
     description: "Broccoli is a cruciferous vegetable that is rich in nutrients, including fiber, vitamin C, and vitamin K. It is often eaten cooked or raw as a side dish or added to salads."

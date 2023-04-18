@@ -12,7 +12,7 @@ export class CRUD<T extends { id: string }> {
     }
 
     getItems = (): T[] => {
-        return localStorage.getItem(this.name) ? JSON.parse(localStorage.getItem(this.name) as string) : []
+        return localStorage.getItem(this.name) ? JSON.parse(localStorage.getItem(this.name) as string) : this.initialData
     }
     addItem = (item: Omit<T, 'id'>) => {
         const newItem = {...item, id: uuidv4()};
@@ -21,7 +21,7 @@ export class CRUD<T extends { id: string }> {
     }
     updateItem = (item: T) => {
         const items = this.getItems();
-        const index = this.getItems().findIndex(({id}) => item.id = id);
+        const index = this.getItems().findIndex(({id}) => item.id === id);
         items[index] = item;
         localStorage.setItem(this.name, JSON.stringify(items));
         return item;
