@@ -2,32 +2,34 @@
 
 ## Introduction
 
-This assignment is supposed to be a conversational piece, so don't push it too far, and it doesn't have to do perfect.
-Try not to spend more than four hours on it. We would like to focus on the code and not the style, so keep it simple
+This assignment is supposed to be a conversational piece, and it doesn't have to do perfect, so don't push it too far.
+Try not to spend more than four hours on it. We would like you to focus on the code and not the style, so keep it simple
 and minimal, even using standard html elements would be fine. If you feel more comfortable using a UI library, feel free
 to do so.
-We use MUI in our project, but don't feel obliged to use it if you are not familiar with it, we'd rather that you spend
-your time thinking and coding than reading documentation.
+We use MUI in our project, but don't feel obliged to use it too if you are not familiar with it, we'd rather that you
+spend your time thinking and coding than reading documentation. We want you to treat this assignment as a base for a
+bigger project, so try to keep the code clean, modular and extensible.
+Don't worry if you cannot finish the assignment in the given timeframe, we just want to see how you think, code, and why
+you
+make the choices you make.
 
 ## The assignment
 
 The assignment is to create a simple web application that has an admin panel and a public facing page. The admin panel
-consists of two pages
-that are a basic CRUD, one for managing fruits and one for managing vegetables. The public facing page is a simple page
-that lists all the fruits and vegetables.
-There is already a mockup of a backend as RTK Query endpoints, you can find it in the `mocks` folder, the endpoints
-have a fake delay so please also use loading states where necessary. The mockup backend just saves the changes on
-localstorage,
-and there is also a function to reset the data to the initial state. There is also already a router and the basic layout
-of
-the app.
+consists of two pages that are a basic CRUD, one for managing fruits and one for managing vegetables. The public facing
+page is a simple page that lists all the products.
+There is already a mockup of a backend as RTK Query endpoints, you can find it in the `src/app/api` folder, the
+endpoints have a fake delay so please also use loading states where you think is necessary. The mockup backend just
+saves the changes on localstorage, and there is also a function to reset the data to the initial state. There is also
+already a router and a basic layout of the app.
 
 ### Admin panel
 
 The admin panel should have two pages, one for managing fruits and one for managing vegetables. The pages should have a
 list/table of the relevant products, and you should be able to create, update and delete them - if you don't use a
-UI framework, don't bother creating a modal if you think it would take too much of your time. There should also be a
-search field that filters the list of products by looking in the title, description and tags.
+UI framework, don't bother creating fancy modals if you think it would take too much of your time, a simple inline form
+works as well. There should also be a search field that filters the list of products by looking in the title,
+description and tags.
 
 #### Creating and Editing
 
