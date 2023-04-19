@@ -18,10 +18,10 @@ make the choices you make.
 The assignment is to create a simple web application that has an admin panel and a public facing page. The admin panel
 consists of two pages that are a basic CRUD, one for managing fruits and one for managing vegetables. The public facing
 page is a simple page that lists all the products.
-There is already a mockup of a backend as RTK Query endpoints, you can find it in the `src/app/api` folder, the
-endpoints have a fake delay so please also use loading states where you think is necessary. The mockup backend just
-saves the changes on localstorage, and there is also a function to reset the data to the initial state. There is also
-already a router and a basic layout of the app.
+We would prefer that you use functional components and hooks. There is already a mockup of a backend as RTK Query 
+endpoints, you can find it in the `src/app/api` folder, the endpoints have a fake delay so please also use loading 
+states where you think is necessary. The mockup backend just saves the changes on localstorage, and there is also a 
+function to reset the data to the initial state. There is also already a router and a basic layout of the app. 
 
 ### Admin panel
 
