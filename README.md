@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This assignment is supposed to be a conversational piece, and it doesn't have to be perfect, so relax, and push yourself too hard.
+This assignment is supposed to be a conversational piece, and it doesn't have to be perfect, so relax, and do not push yourself too hard.
 Try not to spend more than four hours on it. We would like you to focus on the code, and not on the styling, so keep it simple
 and minimal, even using standard html elements would be fine. If you feel more comfortable using a UI library, feel free
 to do so. We use MUI in our project, but don't feel obliged to use it too if you are not familiar with it, we would rather have you
