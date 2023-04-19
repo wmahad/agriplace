@@ -2,16 +2,14 @@
 
 ## Introduction
 
-This assignment is supposed to be a conversational piece, and it doesn't have to do perfect, so don't push it too far.
-Try not to spend more than four hours on it. We would like you to focus on the code and not the style, so keep it simple
+This assignment is supposed to be a conversational piece, and it doesn't have to be perfect, so relax, and push yourself too hard.
+Try not to spend more than four hours on it. We would like you to focus on the code, and not on the styling, so keep it simple
 and minimal, even using standard html elements would be fine. If you feel more comfortable using a UI library, feel free
-to do so.
-We use MUI in our project, but don't feel obliged to use it too if you are not familiar with it, we'd rather that you
-spend your time thinking and coding than reading documentation. We want you to treat this assignment as a base for a
-bigger project, so try to keep the code clean, modular and extensible.
-Don't worry if you cannot finish the assignment in the given timeframe, we just want to see how you think, code, and why
-you
-make the choices you make.
+to do so. We use MUI in our project, but don't feel obliged to use it too if you are not familiar with it, we would rather have you
+spend your time thinking, and coding instead of reading documentation. 
+We want you to treat this assignment as a base for a bigger project, so try to keep the code clean, modular and extensible.
+Don't worry if you cannot finish the assignment in the preferred timeframe (4 hours), we just want to see how you think, code, and why
+you make the choices you make.
 
 ## The assignment
 
@@ -25,7 +23,7 @@ function to reset the data to the initial state. There is also already a router 
 
 ### Admin panel
 
-The admin panel should have two pages, one for managing fruits and one for managing vegetables. The pages should have a
+The admin panel should have two pages, one for managing fruits, and one for managing vegetables. The pages should have a
 list/table of the relevant products, and you should be able to create, update and delete them - if you don't use a
 UI framework, don't bother creating fancy modals if you think it would take too much of your time, a simple inline form
 works as well. There should also be a search field that filters the list of products by looking in the title,
@@ -60,7 +58,7 @@ Clicking on a product should show the product in the product view.
 
 #### Product view
 
-The product view should have its own route, and should snow a preview of the product in the "selected product" section.
+The product view should have its own route, and should show a preview of the product in the "selected product" section.
 It should show the name, description and tags of the product, along with a button that adds that product to the users
 cart. When a product is added, the button should be replaced with a component that shows the number of times this
 product was added to the cart, two buttons to increase/reduce the amount and one button to completely remove the product
